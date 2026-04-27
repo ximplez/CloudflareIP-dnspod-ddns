@@ -64,8 +64,8 @@ jobs:
           file: ./dockerfile # Dockerfile 的路径
           push: true # 设置为 true，构建后会推送到仓库
           tags: | # 为镜像设置多个标签
-            ${{ env.REGISTRY }}/cf-ddns-node:latest
-            ${{ env.REGISTRY }}/cf-ddns-node:sha-${{ github.sha }}
+            ${{ env.REGISTRY }}/${{ github.repository_owner }}/cf-ddns-node:latest
+            ${{ env.REGISTRY }}/${{ github.repository_owner }}/cf-ddns-node:sha-${{ github.sha }}
 
   deploy:
     needs: docker-release
