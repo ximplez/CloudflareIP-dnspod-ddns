@@ -53,7 +53,7 @@ jobs:
         uses: ximplez/docker-login-action@master
         with:
           configPath: secret/common/docker_registry.json
-          configKey: Ali-shenzhen
+          configKey: docker-hub
 
       # 步骤 5: 构建并推送 Docker 镜像
       # 使用 actions/build-push-action@v5 来执行构建和推送
