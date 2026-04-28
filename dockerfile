@@ -50,4 +50,4 @@ USER node
 EXPOSE 52100
 
 # 设置容器启动时执行的命令
-CMD [ "node", "app.js" ]
+CMD [ "node", "src/app.js" ]
